@@ -2,10 +2,18 @@
  * Created by yan on 16-1-20.
  */
 import React from 'react';
-import MyComponent from '../../lib/MyComponent';
-import 'style!css!../../style.css';
-import {render} from 'react-dom';
+import ReactDom from 'react-dom';
+import Button from '../../lib/Button/index';
+import Tag from '../../lib/Tag/index';
+import 'style-loader!css-loader!./style.css';
 
-var element = document.createElement("div");
-document.body.appendChild(element);
-render(<MyComponent name="myComponent"/>, element);
+const Root = props => {
+  return (
+    <ul>
+      <li><Button/></li>
+      <li><Tag/></li>
+    </ul>
+  )
+}
+
+ReactDom.render(<Root/>, document.getElementById('root'));

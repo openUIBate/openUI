@@ -1,4 +1,2 @@
-module.exports = require('./lib/MyComponent');
-exports.default = require('./lib/MyComponent');
-exports.bar = require('./lib/bar');
-exports.foo = require('./lib/foo');
+module.exports.Button = require('./lib/Button/index.js');
+module.exports.Tag = require('./lib/Tag/index.js');
