@@ -3,8 +3,7 @@
  */
 import React from 'react';
 import ReactDom from 'react-dom';
-import Button from '../../lib/Button/index';
-import Tag from '../../lib/Tag/index';
+import {Button, Tag} from '../../lib/index';
 import 'style-loader!css-loader!./style.css';
 
 const Root = props => {
